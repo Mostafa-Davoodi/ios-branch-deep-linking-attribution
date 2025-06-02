@@ -28,6 +28,7 @@ let package = Package(
             publicHeadersPath: "BranchSDK/Public/",
             cSettings: [
                 .headerSearchPath("BranchSDK/Private"),
+								.define("BRANCH_EXCLUDE_IDFA_CODE")
             ],
             linkerSettings: [
                 .linkedFramework("CoreServices"),
